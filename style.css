@@ -40,9 +40,9 @@ html, body {
   
 }
 .left-column div p {
-    font-size: clamp(8rem, 12vw, 12rem);
+    font-size: clamp(4rem, 6vw, 6rem);
     max-width: 33%;
-    font-size: 8rem;
+    font-size: 4rem;
   }
   
   
@@ -58,8 +58,54 @@ html, body {
 
 
   .right-column {
-    background-color: #2252c2; /* Add a background color for the right column */
+   
+    background-color: white; 
     width: 55%;
+    font-size: 1.6rem;
+    padding: 20px;
+  border-radius: 10px;
 }
-
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .right-column {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    form {
+      max-width: 400px;
+    }
+  }
   
