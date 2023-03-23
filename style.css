@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 100%; /* Set the height of the container to the full height of the body */
+  }
+  
+  @font-face {
+    font-family: 'My Custom Font';
+    src: url('/assets/logoFont.otf')format('otf');
+  }
+  
+  
+  
+  
+  .left-column {
+    background-color: #b10d0d; 
+    width: 45%;
+    background-image: url(./assets/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.left-column div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+  margin-top: 30vh;
+  background-color: rgba(0,0,0,.4);
+  max-height: 20%;
+  font-family: 'My Custom Font';
+  color:white;
+  font-size: 20rem;
+  
+}
+.left-column div p {
+    font-size: clamp(8rem, 12vw, 12rem);
+    max-width: 33%;
+    font-size: 8rem;
+  }
+  
+  
+  .left-column div img {
+    width: 16%;
+    height: auto;
+    max-width: 33%;
+  }
+  
+
+
+
+
+
+  .right-column {
+    background-color: #2252c2; /* Add a background color for the right column */
+    width: 55%;
+}
+
+  
